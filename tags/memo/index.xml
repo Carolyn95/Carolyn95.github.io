@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memo on Carolyn&#39;s Space</title>
+    <link>https://carolyn95.github.io/tags/memo/</link>
+    <description>Recent content in memo on Carolyn&#39;s Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://carolyn95.github.io/tags/memo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://carolyn95.github.io/post/my-first-post/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://carolyn95.github.io/post/my-first-post/</guid>
+      <description> We always need to understand very well what the problem is and what the data looks like before we can figure out how to solve it.  </description>
+    </item>
+    
+  </channel>
+</rss>
