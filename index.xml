@@ -6,10 +6,20 @@
     <description>Recent content on Carolyn&#39;s Space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jul 2021 11:32:20 +0800</lastBuildDate>
     
 	<atom:link href="https://carolyn95.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clean Code</title>
+      <link>https://carolyn95.github.io/post/clean-code/</link>
+      <pubDate>Wed, 07 Jul 2021 11:32:20 +0800</pubDate>
+      
+      <guid>https://carolyn95.github.io/post/clean-code/</guid>
+      <description>DO-NOT-FORGET List of Clean Code Code is clean if it could be understood easily - by everyone in the team. Clean code can be read and enhanced by a developer rather than its original author. With understandability comes readability, changeablility, extensibility and maintainability.
+General rules  Follow standard conventions. KISS - Keep It Simple and Stupid. Simpler is always better. Reduce complexity as much as possible. Boy scout rule. Leave the campground cleaner than you found it.</description>
+    </item>
     
     <item>
       <title>My First Post</title>

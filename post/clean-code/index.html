@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Clean Code</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: grey;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://carolyn95.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.69.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Clean Code</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="yanchongcarolynchen@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/Carolyn95/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/username/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/username/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/username/"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Clean Code</h2>
+        <h5>July 7, 2021</h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><h1 id="do-not-forget-list-of-clean-code">DO-NOT-FORGET List of Clean Code</h1>
+<p>Code is clean if it could be understood easily - by everyone in the team. Clean code can be read and enhanced by a developer rather than its original author. With understandability comes readability, changeablility, extensibility and maintainability.</p>
+<h3 id="general-rules">General rules</h3>
+<ol>
+<li>Follow standard conventions.</li>
+<li>KISS - Keep It Simple and Stupid. Simpler is always better. Reduce complexity as much as possible.</li>
+<li>Boy scout rule. Leave the campground cleaner than you found it.</li>
+<li>Always find root cause. Always look for the root cause of a problem.</li>
+</ol>
+<h3 id="design-rules">Design rules</h3>
+<ol>
+<li>Keep configurable data at high levels.</li>
+<li>Prefer polymorphism to if/else or switch/case.</li>
+<li>Separate multi-threading code.</li>
+<li>Prevent over-configurability.</li>
+<li>Use dependency injection.</li>
+<li>Follow law of Demeter. A class should know only its direct dependencies.</li>
+</ol>
+<h3 id="understandability-tips">Understandability tips</h3>
+<ol>
+<li>Be consistent. If you do something a certain way, do all similar things in the same way.</li>
+<li>Use explanatory variables.</li>
+<li>Encapsulate boundary conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.</li>
+<li>Prefer dedicated value objects to primitive type.</li>
+<li>Avoid logical dependency. Don&rsquo;t write methods which works correctly depending on something else in the same class.</li>
+<li>Avoid negative conditions.</li>
+</ol>
+<h3 id="names-rules">Names rules</h3>
+<ol>
+<li>Choose descriptive and unambiguous names.</li>
+<li>Make meaningful distinction.</li>
+<li>Use pronounceable names.</li>
+<li>Use searchable names.</li>
+<li>Replace magic numbers with named constants.</li>
+<li>Avoid encodings. Don&rsquo;t append prefixes or type information.</li>
+</ol>
+<h3 id="functions-rules">Functions rules</h3>
+<ol>
+<li>Small.</li>
+<li>Do one thing.</li>
+<li>Use descriptive names.</li>
+<li>Prefer fewer arguments.</li>
+<li>Have no side effects.</li>
+<li>Don&rsquo;t use flag arguments. Split method into several independent methods that can be called from the client without the flag.</li>
+</ol>
+<h3 id="comments-rules">Comments rules</h3>
+<ol>
+<li>Always try to explain yourself in code.</li>
+<li>Don&rsquo;t be redundant.</li>
+<li>Don&rsquo;t add obvious noise.</li>
+<li>Don&rsquo;t use closing brace comments.</li>
+<li>Don&rsquo;t comment out code. Just remove.</li>
+<li>Use as explanation of intent.</li>
+<li>Use as clarification of code.</li>
+<li>Use as warning of consequences.</li>
+</ol>
+<h3 id="source-code-structure">Source code structure</h3>
+<ol>
+<li>Separate concepts vertically.</li>
+<li>Related code should appear vertically dense.</li>
+<li>Declare variables close to their usage.</li>
+<li>Dependent functions should be close.</li>
+<li>Similar functions should be close.</li>
+<li>Place functions in the downward direction.</li>
+<li>Keep lines short.</li>
+<li>Don&rsquo;t use horizontal alignment.</li>
+<li>Use white space to associate related things and disassociate weekly related.</li>
+<li>Don&rsquo;t break indentation.</li>
+</ol>
+<h3 id="objects-and-data-structures">Objects and data structures</h3>
+<ol>
+<li>Hide internal structure.</li>
+<li>Prefer data structure.</li>
+<li>Avoid hybrid structures(half object and half data).</li>
+<li>Should be small.</li>
+<li>Do one thing.</li>
+<li>Small number of instance variables.</li>
+<li>Base class should know nothing about their derivatives.</li>
+<li>Better to have many functions than to pass some code into a function to select a behavior.</li>
+<li>Prefer non-static methods to static methods.</li>
+</ol>
+<h3 id="tests">Tests</h3>
+<ol>
+<li>One assert per test.</li>
+<li>Readable.</li>
+<li>Fast.</li>
+<li>Independent.</li>
+<li>Repeatable.</li>
+</ol>
+<h3 id="code-smells">Code smells</h3>
+<ol>
+<li>Rigidity. The software is difficult to change. A small change causes a cascade of subsequent changes.</li>
+<li>Fragility. The software breaks in many places due to a single change.</li>
+<li>Immobility. You cannot reuse parts of the code in other projects because of involved risks and high effort.</li>
+<li>Needless complexity.</li>
+<li>Needless repetition.</li>
+<li>Opacity. The code is hard to understand.</li>
+</ol>
+</div>
+
+    
+    
+    
+
+    
+    
+        <h4 class="page-header">Comments</h4>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "username" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+
